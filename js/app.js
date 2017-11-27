@@ -17,3 +17,12 @@ function setDate(){
 }
 
 setInterval(setDate, 1000);
+
+const inputs = document.querySelectorAll('.controls input');
+function handleUpdate(){
+  const suffix = this.dataset.sizing || '';
+  document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
+}
+
+inputs.forEach(imput => imput.addEventListener('change', handleUpdate))
+inputs.forEach(imput => imput.addEventListener('mousemove', handleUpdate))
