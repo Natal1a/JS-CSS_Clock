@@ -3,16 +3,8 @@
   --size: 20rem;
 }
 
-
-html {
-  background: var(--color);
-  background-size:cover;
-  font-family:'helvetica neue';
-  text-align: center;
-  font-size: 10px;
-}
-
 .clock {
+  background: var(--color);
   margin: 0;
   font-size: 2rem;
   display:flex;
@@ -24,8 +16,6 @@ html {
   margin:50px auto;
   position: relative;
   padding:2rem;
-  box-shadow:
-    0 0 30px rgba(0,0,0,1);
 }
 
 .clock-face {
@@ -42,8 +32,6 @@ border-radius: 50%;
   top:50%;
   transform-origin: 100%;
   transform: rotate(90deg);
-  transition: all 1s;
-  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
 .hour-hand {
